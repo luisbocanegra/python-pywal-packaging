@@ -21,7 +21,7 @@
 %global debug_package %{nil}
 Name:           python-pywal
 Version:        3.3.0
-Release:        0
+Release:        1%{?dist}
 Summary:        Generate and change color-schemes on the fly
 License:        MIT
 URL:            https://github.com/dylanaraps/pywal
@@ -63,4 +63,5 @@ Generate and change color-schemes on the fly
 %{python3_sitelib}/pywal-%{version}.dist-info
 
 %changelog
-%autochangelog
+* Sun May 22 2024 Luis Bocanegra <luisbocanegra@users.noreply.github.com> 3.3.0
+- new package built with tito
